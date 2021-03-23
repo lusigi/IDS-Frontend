@@ -1,38 +1,65 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.createStaff{
+  height: 85vh;
+  display: flex;
+ 
+  
+
+}
+
+.image-hero{
+  width: 40vw;
+  background-color: rgba(255, 0, 0, 0.925);
+  height: 85vh;
+  position: relative;
+}
+
+.MuiAvatar-root{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+
+
+.hero-text{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family:"Lexend", sans-serif;
+  align-items: center;
+}
+
+.image-hero h2{
+
+  font-family:"Lexend", sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-text p{
+
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon-next{
+  position: absolute; 
+  bottom: -90%;
+  font-size: 45px !important;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

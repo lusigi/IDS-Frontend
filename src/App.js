@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Nav from "./components/nav/Nav";
+import {Switch, Route} from 'react-router-dom'
+import AllStaff from './components/AllStaff'
+import ViewReports from './components/ViewReports'
+import Home from './components/Home'
+import Login from './components/Login'
+import CreateStaff from './components/CreateStaff'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav />
+      <Switch>
+        <Route exact path = '/allstaff' component = {AllStaff}>
+
+        </Route>
+        <Route exact path = '/viewreports' component = {ViewReports}>
+
+        </Route>
+        <Route exact path = '/login' component = {Login}>
+
+        </Route>
+        <Route exact path = '/' component = {Home}>
+
+        </Route>
+        <Route exact path = '/addstaff' component = {CreateStaff}>
+
+        </Route>
+      </Switch>
+     
     </div>
   );
-}
+};
 
 export default App;
