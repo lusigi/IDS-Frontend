@@ -5,55 +5,53 @@
   font-family: "Poppins", sans-serif;
 }
 
-.createStaff{
-  height: 85vh;
-  display: flex;
- 
-  
-
+a {
+  text-decoration: none;
 }
 
-.image-hero{
+.createStaff {
+  height: 85vh;
+  display: flex;
+}
+
+.image-hero {
   width: 40vw;
   background-color: rgba(255, 0, 0, 0.925);
   height: 85vh;
   position: relative;
 }
 
-.MuiAvatar-root{
+.MuiAvatarGroup-root {
+  display: flex;
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 
-
-
-.hero-text{
+.hero-text {
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translateX(-50%);
-  font-family:"Lexend", sans-serif;
+  font-family: "Lexend", sans-serif;
   align-items: center;
 }
 
-.image-hero h2{
-
-  font-family:"Lexend", sans-serif;
+.image-hero h2 {
+  font-family: "Lexend", sans-serif;
   text-align: center;
 }
 
-.hero-text p{
-
+.hero-text p {
   text-align: center;
   font-weight: 300;
   font-size: 14px;
   margin-top: 15px;
 }
 
-.icon-next{
-  position: absolute; 
+.icon-next {
+  position: absolute;
   bottom: -90%;
   font-size: 45px !important;
   text-align: center;
@@ -62,4 +60,63 @@
   color: white !important;
 }
 
+.form-field {
+  width: 60vw;
+  height: 100%;
+}
 
+.form-field > form {
+  max-width: 100%;
+  margin: 150px 0 0 150px;
+}
+
+form input {
+  outline: none;
+  border: 1px solid grey;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+.group-form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.flex-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.large {
+  max-width: 441px;
+  margin-bottom: 20px;
+}
+.left {
+  margin-right: 20px;
+}
+.submit-back {
+  display: flex;
+}
+
+.nav-home {
+  background-color: black;
+  display: block;
+  padding: 10px 40px;
+  width: 211px;
+  color: white;
+  text-align: center;
+  transition: 0.5s ease-in;
+}
+
+.nav-home:hover {
+  background-color: red;
+  color: black;
+}
+
+.submit {
+  width: 211px;
+  color: black !important;
+  text-align: center;
+  background-color: rgb(157, 255, 9) !important;
+  transition: 0.5s ease-in;
+}
