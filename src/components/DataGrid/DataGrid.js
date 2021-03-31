@@ -17,7 +17,7 @@ export default function DataTable() {
 
   useEffect(() => {
     async function fetchData() {
-      const req = await axios.get("http://localhost:3001/api/users/allstaff");
+      const req = await axios.get("http://localhost:5000/api/staff/allstaff");
 
       setRows(req.data);
     }

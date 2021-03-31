@@ -120,3 +120,19 @@ form input {
   background-color: rgb(157, 255, 9) !important;
   transition: 0.5s ease-in;
 }
+
+.form {
+}
+.home {
+  width: 800px;
+  margin: 0 auto;
+  display: grid;
+  align-content: center;
+}
+.inputSearch {
+  padding: 10px 20px;
+  border: 0.3px solid gray;
+  border-radius: 999px;
+  width: 100%;
+  outline: none;
+}
